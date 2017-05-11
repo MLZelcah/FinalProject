@@ -1,1 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <!-- BOOTSTRAP (style only)-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="memorize.css" />
+  <title>Teacher Quiz</title>
+  <script type="text/javascript" src="roster.js"></script>
+</head>
+<body lang="en-US">
+  <div id="header">
+  <h1>Face/Name Recognition Quiz</h1>
+</div>
+  <div id="setup">
+    <h3>Enter your student's info</h3>
+  </div>
+  <div id="entered">
+    <p>Student's name: </p>
+    <input type="text" id="nameInput" class="form-control input-md"
+           placeholder="Name" />
+           <p> </p>
+    <p>Select image of student:</p>
+    <form enctype="multipart/form-data" action="/upload/image" method="post">
+    <input id="image-file" type="file" />
+</form>
+    <p> </p>
+    <button type="button" value="enter student" onClick="input()">
+      enter
+    </button>
+         </div>
+      <div id="results">
+        <h2 id="allNames"></h2>
+        <button type="button" value="begin quiz" onClick="begin()">
+          begin
+        </button>
+      </div>
+      <div id="space">
+      <p> </p>
+     </div>
+     <div id="answers">
+               <div class="row">
+                 <div class="col-sm-8">
+                   <div class="radio">
+                     <label>
+                       <input type="radio" id="NameOne" name="studentNames" value=studentNames[0]>
+                         Name 1
+                     </label>
+                   </div>
+                   <div class="radio">
+                     <label>
+                       <input type="radio" id="NameTwo" name="studentNames" value=studentNames[1]>
+                         Name 2
+                     </label>
+                   </div>
+                   <div class="radio">
+                     <label>
+                       <input type="radio" id="NameThree" name="studentNames" value=studentNames[2]>
+                         Name 3
+                     </label>
+                   </div>
+                   <div class="radio">
+                     <label>
+                       <input type="radio" id="NameFour" name="studentNames" value=studentNames[3]>
+                         Name 4
+                     </label>
+                   </div>
+                   <div class="radio">
+                     <label>
+                       <input type="radio" id="NameFive" name="studentNames" value=studentNames[4]>
+                         Name 5
+                     </label>
+                   </div>
+                   <div class="radio">
+                     <label>
+                       <input type="radio" id="NameSix" name="studentNames" value=studentNames[5]>
+                         Name 6
+                     </label>
+                   </div>
+                 </div>
+               </div>
+          <button type="button" value="answer question" onClick="solution()">
+            answer
+          </button>
+          <p id="theTruth"> </p>
+      </div>
+      <div id="image">
+        <img src"" id="aStudentImage">
 
+      </div>
+</body>
+</html>

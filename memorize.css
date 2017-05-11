@@ -1,1 +1,32 @@
+body{
+  background-color: #EEE;
+}
 
+#header {
+  background-color: #66CCFF;
+  color: white;
+  text-align: center;
+}
+#setup {
+  width: 180px;
+  float: left;
+}
+#entered {
+  width: 200px;
+  float: left;
+}
+#results {
+  width: 180px;
+  float: left;
+}
+#answers {
+  width: 300px;
+  float: right;
+}
+#image {
+  float: left;
+}
+#space {
+  width: 200px;
+  float: right;
+}
